@@ -20,11 +20,16 @@ a,
 btn {
   font-family: "Inter", sans-serif;
 }
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
 
 #herobanner {
   width: 100vw;
   height: 100vh;
-  background-color: blue;
   background-image: url(assets/astrocat.png);
 }
 
@@ -60,7 +65,7 @@ nav a {
   justify-content: center;
   align-items: center;
   width: 50vw;
-  margin: 3em;
+  /* margin: 1em 0 0 0; */
 }
 
 #contentLeft h2 {
