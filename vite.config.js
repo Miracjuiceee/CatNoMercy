@@ -12,7 +12,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(root, "index.html"),
-        soon: resolve(root, "soon", "soon.html"),
+        links: resolve(root, "links", "index.html"),
+        memeGen: resolve(root, "memeGen", "index.html"),
+        story: resolve(root, "story", "index.html"),
+        team: resolve(root, "team", "index.html"),
       },
     },
   },
