@@ -76,11 +76,11 @@ nav a {
 
 #contentLeft img {
   width: 50%;
-  margin: 2em 0em 1.5em 0;
+  margin: 0em 0em 1.5em 0;
 }
 
 #contentLeft p {
-  margin: 0 0 1.5em 0;
+  margin: 0.5em 0 1em 0;
   color: #fff;
   font-size: 22px;
 }
@@ -94,7 +94,7 @@ nav a {
   text-decoration: none;
   color: rgb(255, 77, 0);
   font-size: 16px;
-  margin: 0 0 2em;
+  margin: 0 0 1em;
 }
 
 #contentLeft button:hover {
