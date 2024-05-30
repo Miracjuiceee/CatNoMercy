@@ -20,3 +20,9 @@ a,
 btn {
   font-family: "Inter", sans-serif;
 }
+
+#herobanner {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+}
