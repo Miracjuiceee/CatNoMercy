@@ -1,0 +1,278 @@
+:root {
+  --color-primary: hsl(272, 61%, 16%, 100%);
+  --color-secondary: hsl(272, 61%, 41%, 100%);
+  --color-dpurple: hsl(272, 53%, 35%, 100%);
+  --color-pink: rgba(252, 66, 255, 1);
+  --color-white: hsl(0, 0%, 100%, 100%);
+  --color-yellow: hsl(52, 99%, 54%, 100%);
+  --color-black: hsl(285, 65%, 5%, 100%);
+  --color-orange: hsl(10, 96%, 57%, 100%);
+  --color-purple: hsl(255, 89%, 54%, 100%);
+  --color-lemon: hsl(84, 100%, 55%, 100%);
+  --color-cyan: hsl(180, 100%, 69%, 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.textYellow {
+  color: var(--color-yellow);
+}
+
+.textPink {
+  color: var(--color-pink);
+}
+
+.textLemon {
+  color: var(--color-lemon);
+}
+
+/* HEADER COMPOSANT */
+
+header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(92, 42, 135, 1) 0%,
+    rgba(92, 42, 135, 0) 100%
+  );
+  backdrop-filter: blur(2px);
+  height: 90px;
+  width: 100vw;
+  padding: 1em 5em 1.2em 5em;
+}
+
+header img {
+  width: 60px;
+  margin: 0.5em 0.5em 0 0;
+}
+header h1 {
+  flex: 2;
+}
+
+header h1 a {
+  font-family: "sora", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  color: var(--color-white);
+  font-size: 24px;
+  text-align: center;
+}
+
+header nav button {
+  background-color: var(--color-pink);
+}
+
+header nav button a {
+  color: var(--color-white);
+}
+
+#buyBtn {
+  display: inline-block;
+  align-content: center;
+  text-align: center;
+  width: 160px;
+  height: 35px;
+  padding: auto;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--color-pink);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#buyBtn:hover {
+  border: solid var(--color-pink) 2px;
+  background-color: transparent;
+  color: var(--color-pink);
+  padding: 0 0 0 0;
+  cursor: pointer;
+  transition: ease-out 200ms;
+}
+
+header h1 a:hover {
+  color: var(--color-pink);
+  cursor: pointer;
+  transition: ease-out 300ms;
+}
+
+header h1 a span {
+  color: var(--color-pink);
+}
+
+header nav a {
+  margin: 1.5em;
+  color: var(--color-white);
+}
+
+header nav a:hover {
+  color: var(--color-pink);
+  border-bottom: solid var(--color-pink) 2px;
+  transition: ease-out 200ms;
+}
+
+/* HERO  COMPOSANT */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 1000px;
+  background-image: linear-gradient(
+    var(--color-primary),
+    var(--color-secondary)
+  );
+}
+
+section h1 {
+  color: var(--color-white);
+  font-size: 64px;
+  line-height: 1.1em;
+  margin: 2.5em 0 0.3em 0;
+}
+
+section p {
+  font-size: 24px;
+  color: var(--color-white);
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+section .catIllu {
+  margin: 4em 0 3em 0;
+}
+
+.catIllu img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#telegrambtn {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 16px;
+  margin: 0.5em;
+}
+
+#telegrambtn:hover {
+  border: solid var(--color-black) 2px;
+  background-color: transparent;
+  color: var(--color-black);
+  padding: 0 0 0 0;
+}
+
+/* HOW TO BUY COMPOSANT */
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 1600px;
+  padding: 9em 6em 0em 6em;
+  background-image: linear-gradient(
+    var(--color-secondary),
+    var(--color-primary)
+  );
+}
+
+article img {
+  width: 245px;
+}
+
+article h1 {
+  color: var(--color-white);
+  font-size: 64px;
+}
+
+article h2 {
+  color: var(--color-white);
+  margin: 4em 0em 0.5em 0em;
+  font-size: 24px;
+}
+
+article h3 {
+  color: var(--color-white);
+  margin: 4em auto 0.5em auto;
+  font-size: 24px;
+  max-width: 400px;
+  text-align: center;
+}
+
+article a {
+  margin-bottom: 1em;
+  font-size: 24px;
+}
+
+article p {
+  color: var(--color-white);
+}
+
+article p:nth-child(4) {
+  text-align: center;
+}
+
+.dlContent {
+  display: flex;
+  justify-content: center;
+}
+
+.dl {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2.5em;
+}
+
+.dl img:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 200ms;
+}
+
+.dl button {
+  margin: 2em 0 0 0;
+}
+
+#btnPhantom {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+#btnPhantom:hover {
+  border: solid var(--color-purple) 2px;
+  background-color: transparent;
+  color: var(--color-purple);
+  padding: 0 0 0 0;
+  cursor: pointer;
+  transition: ease-out 200ms;
+}
+
+#btnSolflare {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+#btnSolflare:hover {
+  border: solid var(--color-orange) 2px;
+  background-color: transparent;
+  color: var(--color-orange);
+  padding: 0 0 0 0;
+  cursor: pointer;
+  transition: ease-out 200ms;
+}
+
+#btnJupiter {
+  background-color: var(--color-lemon);
+  color: var(--color-black);
+}
+
+#btnRaydium {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+}

@@ -1,10 +1,8 @@
-# CatNoMercy
+# React + Vite
 
-We're $CAT, we have no mercy
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Blockchain : Solana
+Currently, two official plugins are available:
 
-CA : CURoogRbbH6kTFfCVivAoxqjXGnwrxGZPtmvaKa7GkKb
-3r
-
-0e1a28
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
