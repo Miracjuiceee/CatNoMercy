@@ -545,7 +545,7 @@ footer nav a:hover {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 2100px;
+    height: 2150px;
     padding: 1em;
     background-image: linear-gradient(
       var(--color-secondary),
