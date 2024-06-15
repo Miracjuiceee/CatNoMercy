@@ -9,6 +9,24 @@ const copyCA = function getCA() {
   alert("CA have been copied to your clipboard");
 };
 
+const goRaydium = () => {
+  window.location.href =
+    "https://raydium.io/swap/?inputMint=sol&outputMint=CURoogRbbH6kTFfCVivAoxqjXGnwrxGZPtmvaKa7GkKb";
+};
+
+const goJupiter = () => {
+  window.location.href =
+    "https://jup.ag/swap/SOL-CURoogRbbH6kTFfCVivAoxqjXGnwrxGZPtmvaKa7GkKb";
+};
+
+const dlPhantom = () => {
+  window.location.href = "https://phantom.app/";
+};
+
+const dlSolflare = () => {
+  window.location.href = "https://solflare.com/";
+};
+
 function Buy() {
   return (
     <>
@@ -21,13 +39,27 @@ function Buy() {
 
         <div className='dlContent'>
           <div className='dl p'>
-            <img src={Phantom} id='Phantom' alt='Phantom Wallet' />
-            <button id='btnPhantom'>Download Phantom Wallet</button>
+            <img
+              src={Phantom}
+              id='Phantom'
+              alt='Phantom Wallet'
+              onClick={dlPhantom}
+            />
+            <button id='btnPhantom' onClick={dlPhantom}>
+              Download Phantom Wallet
+            </button>
           </div>
 
           <div className='dl s'>
-            <img src={SolFlare} id='Solflare' alt='SolFlare Wallet' />
-            <button id='btnSolflare'>Download Solflare Wallet</button>
+            <img
+              src={SolFlare}
+              id='Solflare'
+              alt='SolFlare Wallet'
+              onClick={dlSolflare}
+            />
+            <button id='btnSolflare' onClick={dlSolflare}>
+              Download Solflare Wallet
+            </button>
           </div>
         </div>
 
@@ -37,7 +69,12 @@ function Buy() {
           Copy Our <span className='textPink'>Contract Address</span>
         </h2>
 
-        <a href=''>CURoogRbbH6kTFfCVivAoxqjXGnwrxGZPtmvaKa7GkKb</a>
+        <a
+          href='https://dexscreener.com/solana/AvVrr1ijoPobDx714xToyZ9ecd73ZPep9Q9c5NWRqR5Z'
+          target='_blank'
+        >
+          CURoogRbbH6kTFfCVivAoxqjXGnwrxGZPtmvaKa7GkKb
+        </a>
         <button onClick={copyCA}>Copy CA</button>
 
         <p id='copy_done'>{copyCA.innerText}</p>
@@ -50,13 +87,17 @@ function Buy() {
 
         <div className='dlContent'>
           <div className='dl j'>
-            <img src={CatEyes} alt='eyes $CAT' />
-            <button id='btnJupiter'>Go to Jupiter</button>
+            <img src={CatEyes} alt='eyes $CAT' onClick={goJupiter} />
+            <button id='btnJupiter' onClick={goJupiter}>
+              Go to Jupiter
+            </button>
           </div>
 
           <div className='dl r'>
-            <img src={Stone} alt='stone $CAT' />
-            <button id='btnRaydium'>Go to Raydium</button>
+            <img src={Stone} alt='stone $CAT' onClick={goRaydium} />
+            <button id='btnRaydium' onClick={goRaydium}>
+              Go to Raydium
+            </button>
           </div>
         </div>
       </article>

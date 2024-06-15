@@ -12,7 +12,7 @@ function Header() {
           </a>
         </h1>
 
-        <nav>
+        <nav className='desktop'>
           <a href='https://allmylinks.com/we-are-cat' target='_blank'>
             Social link
           </a>
